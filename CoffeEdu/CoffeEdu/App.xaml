@@ -1,0 +1,108 @@
+﻿<Application
+    x:Class="CoffeEdu.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CoffeEdu"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <!--BUTTON STYLE-->
+        <Style TargetType="Button" x:Key="NavigationButtonStyle">
+            <Setter Property="Background" Value="Brown" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Stretch" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderThickness" Value="0,0,2,0" />
+        </Style>
+        <!--END OF BUTTON STYLE-->
+        <!--GRIDCONTENT-->
+        <Style TargetType="GridView" x:Key="GridContent">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+        <!--END OF GRID CONTENT-->
+        <!--PANELCONTENT STYLE-->
+        <Style TargetType="StackPanel" x:Key="PanelContent">
+            <Setter Property="Visibility" Value="Collapsed"/>
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Grid.Column" Value="0"/>
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="Grid.Row" Value="1"/>
+        </Style>
+        <!--END OF PANELCONTENT-->
+        <!--IMAGECONTENT STYLE-->
+        <Style TargetType="Image" x:Key="ImageContent">
+            <Setter Property="Height" Value="200"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <!--END OF IMAGECONTEN STYLE-->
+        <!--HEAD STYLE-->
+        <Style TargetType="TextBlock" x:Key="HeadContent">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Margin" Value="20"/>
+        </Style>
+        <!--END OF HEAD STYLE-->
+        <!--BODY STYLE-->
+        <Style TargetType="TextBlock" x:Key="BodyContent">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="MaxWidth" Value="800" />
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <!--END OF BODY STYLE-->
+        <!--QUOTES-->
+        <Style TargetType="TextBlock" x:Key="Quotes">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="RelativePanel.AlignRightWithPanel" Value="True"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+        </Style>
+        <!--END OF QUOTES-->
+
+        <!--PHONE-->
+        <!--GRIDCONTENT_PHONE-->
+        <Style TargetType="GridView" x:Key="GridContentPhone">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <!--END OF GRIDCONTENT_PHONE-->
+        <!--PANELCONTENT_PHONE-->
+        <Style TargetType="StackPanel" x:Key="PanelContentPhone">
+            <Setter Property="Visibility" Value="Collapsed"/>
+            <Setter Property="Orientation" Value="Vertical"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Grid.Column" Value="0"/>
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="Grid.Row" Value="1"/>
+        </Style>
+        <!--END OF PANEL CONTENT_PHONE-->
+        <!--QUOTES_PHONE-->
+        <Style TargetType="TextBlock" x:Key="QuotesPhone">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="RelativePanel.AlignRightWithPanel" Value="True"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <!--END OF QUOTES_PHONE-->
+        <!--END OF PHONE-->
+
+        <!--HOME_STYLE-->
+        <Style TargetType="StackPanel" x:Key="StackHomeStyle">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Orientation" Value="Horizontal"/>
+        </Style>
+        <!--END OF HOME_STYLE-->
+    </Application.Resources>
+</Application>
